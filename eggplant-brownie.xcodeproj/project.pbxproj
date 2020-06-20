@@ -13,6 +13,8 @@
 		25523B7A249E510A0027F295 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25523B78249E510A0027F295 /* Main.storyboard */; };
 		25523B7C249E510C0027F295 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25523B7B249E510C0027F295 /* Assets.xcassets */; };
 		25523B7F249E510C0027F295 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25523B7D249E510C0027F295 /* LaunchScreen.storyboard */; };
+		25523B88249E88920027F295 /* Refeicao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25523B87249E88920027F295 /* Refeicao.swift */; };
+		25523B8A249E88BE0027F295 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25523B89249E88BE0027F295 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		25523B7E249E510C0027F295 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25523B80249E510C0027F295 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25523B86249E65BD0027F295 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = MyPlayground.playground; path = "../../../../../Library/Autosave Information/MyPlayground.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		25523B87249E88920027F295 /* Refeicao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refeicao.swift; sourceTree = "<group>"; };
+		25523B89249E88BE0027F295 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +46,6 @@
 			isa = PBXGroup;
 			children = (
 				25523B71249E510A0027F295 /* eggplant-brownie */,
-				25523B70249E510A0027F295 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,6 +55,7 @@
 				25523B6F249E510A0027F295 /* eggplant-brownie.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		25523B71249E510A0027F295 /* eggplant-brownie */ = {
@@ -59,14 +63,41 @@
 			children = (
 				25523B72249E510A0027F295 /* AppDelegate.swift */,
 				25523B74249E510A0027F295 /* SceneDelegate.swift */,
-				25523B76249E510A0027F295 /* ViewController.swift */,
-				25523B78249E510A0027F295 /* Main.storyboard */,
+				25523B8B249E89480027F295 /* models */,
+				25523B8D249E89980027F295 /* views */,
+				25523B8C249E895E0027F295 /* controllers */,
+				25523B70249E510A0027F295 /* Products */,
 				25523B7B249E510C0027F295 /* Assets.xcassets */,
 				25523B86249E65BD0027F295 /* MyPlayground.playground */,
 				25523B7D249E510C0027F295 /* LaunchScreen.storyboard */,
 				25523B80249E510C0027F295 /* Info.plist */,
 			);
 			path = "eggplant-brownie";
+			sourceTree = "<group>";
+		};
+		25523B8B249E89480027F295 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				25523B87249E88920027F295 /* Refeicao.swift */,
+				25523B89249E88BE0027F295 /* Item.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		25523B8C249E895E0027F295 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				25523B76249E510A0027F295 /* ViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		25523B8D249E89980027F295 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				25523B78249E510A0027F295 /* Main.storyboard */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25523B8A249E88BE0027F295 /* Item.swift in Sources */,
 				25523B77249E510A0027F295 /* ViewController.swift in Sources */,
 				25523B73249E510A0027F295 /* AppDelegate.swift in Sources */,
 				25523B75249E510A0027F295 /* SceneDelegate.swift in Sources */,
+				25523B88249E88920027F295 /* Refeicao.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
