@@ -12,7 +12,10 @@ class ViewController: UIViewController {
 
 
     @IBAction func adicionar(_ sender: Any) {
-        print("Alimento: Qualquer")
+        let nome = "Churros"
+        let felicidade = "5"
+        
+        print("Comi \(nome) e fiquei com felicidade \(felicidade)")
     }
     
 }
