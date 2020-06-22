@@ -25,12 +25,28 @@ class RefeicoesTableViewController: UITableViewController, AdicionaRefeicaoDeleg
         let refeicao = refeicoes[indexPath.row]
         celula.textLabel?.text = refeicao.nome
         
+        let longPress = UILongPressGestureRecognizer(target: self, action: #selector(self.mostrarDetalhes(_:)))
+        // Qualquer objeto que herde de UIView é possível usar o addGestureRecognizer
+        celula.addGestureRecognizer(longPress)
+        
         return celula
     }
     
     func add(_ refeicao: Refeicao) {
         refeicoes.append(refeicao)
         tableView.reloadData()
+    }
+    
+    @objc func mostrarDetalhes(_ gesture: UILongPressGestureRecognizer) {
+        if gesture.state == .began {
+            let celula = gesture.view as! UITableViewCell
+            
+            guard let indexPath = tableView.indexPath(for: celula) else { return }
+            
+            let refeicao = refeicoes[indexPath.row]
+            
+            print("refeicao: \(refeicao.nome)")
+        }
     }
     
     // Passa a referencia de si mesmo para a próxima tela
